@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	  <link href="formatting.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<body>  
+
+<!-- The logo of the Application -->
+
+<div class="leftandtop">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <center><img  src="Images/iste-logo-png-7.png" height="100px" width="100px"></center>
+      </div>
+      <div class="col align-self-center">
+        <h1 style="text-align:left">Indian Society For Technical Education</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menus -->
+
+<div class="leftandtop">
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link" href="index.html">Home</a>
+    <a class="nav-item nav-link" href="events.html">Events</a>
+    <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+    <a class="nav-item nav-link active" href="register.html">Register</a>
+    <a class="nav-item nav-link" href="about.html">About Us</a>
+    <a class="nav-item nav-link" href="admins.html">Admins</a>
+  </nav>
+</div>
+
+
+<!-- Forms -->
+
+<div class="onlyleftandright">
+
+  <form name="myForm" action="logic.php" method="post">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input name="fname" type="text" class="form-control" id="validationDefault01" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input name="lname" type="text" class="form-control" id="validationDefault02" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="validationDefault01">Roll Number</label>
+    <input name="roll" type="text" class="form-control" id="rollnumberID" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="phonenum">Phone Number </label><br/>
+    <input id="phonenum" name="phone" type="tel" pattern="^\d{10}$" required >
+  </div>  
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Department</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios1" value="0" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Computer Science and Engineering
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios2" value="1">
+          <label class="form-check-label" for="gridRadios2">
+            Information Technology
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="2" >
+          <label class="form-check-label" for="gridRadios3">
+            Mechanical Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="3" >
+          <label class="form-check-label" for="gridRadios3">
+            Civil Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="4" >
+          <label class="form-check-label" for="gridRadios3">
+            Electrical and Communication Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="5" >
+          <label class="form-check-label" for="gridRadios3">
+            Electrical and Electronics Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="6" >
+          <label class="form-check-label" for="gridRadios3">
+            Automobile Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="7" >
+          <label class="form-check-label" for="gridRadios3">
+            Production Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="8" >
+          <label class="form-check-label" for="gridRadios3">
+            Mechatronics Engineering
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="dept" id="gridRadios3" value="9" >
+          <label class="form-check-label" for="gridRadios3">
+            Electrical and Instrumental Engineering
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group">
+    <label for="validationDefault01">Event Name</label>
+    <input name="event" type="text" class="form-control" id="eventID" required>
+  </div>  
+  <button class="btn btn-primary" type="submit" >Submit form</button>
+  </form>
+</div>
+
+
+</body>
+</html>
